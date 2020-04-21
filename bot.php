@@ -37,11 +37,7 @@ if ($data->type == 'confirmation') {
 if ($data->type == 'message_new') {
 
 	if($message == "Test") {
-		send($p, "
-Бот работает.
-Warns:$warn
-Text:$text
-", $token);
+send($p, "Бот работает.", $token);
 	}
 }
 die('ok');
